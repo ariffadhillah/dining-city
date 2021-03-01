@@ -33,8 +33,8 @@
 		<input type="checkbox" id="nav-check">
 		<div class="nav-links">
 			<div class="links">
-				<a href="#" target="_blank">Sign up</a>
-				<a href="#" target="_blank">login</a>
+				<a href="#" target="_blank" class="btn-sign">Sign up</a>
+				<a href="#" target="_blank" class="btn-login">login</a>
 			</div>		
 			<ul class="nav-bottom-mobile">
 				<li><a href="#">restaurants darectory</a></li>
@@ -60,7 +60,7 @@
 				<li><a href="#">restaurant week</a></li>
 				<li><a href="#">faqs</a></li>
 				<li><a href="#">download app</a></li>
-				<li><a href="#">my d</a></li>
+				<li><a href="#"><i class="far fa-user"></i> my dining</a></li>
 			</ul>
 		</div>
 	</section>
@@ -100,7 +100,99 @@
 			</div>
 		</article>
 	</section>
-	<section class="tab-nav">		
+	<section class="tab-nav">	
+		<div class="container nav-tab">
+			<h3>discover restaurant</h3>
+			<div class="tab">
+				<button class="tablinks" onclick="openCity(event, 'newlistings')" id="defaultOpen">new listings</button>
+				<button class="tablinks" onclick="openCity(event, 'location')">location</button>
+				<button class="tablinks" onclick="openCity(event, 'cusine')">cusine</button>
+				<button class="tablinks" onclick="openCity(event, 'deals')">deals</button>
+			  </div>
+
+			<div id="newlistings" class="tabcontent">
+				<h3>new listings</h3>
+				<p>London is the capital city of England.</p>
+
+				<div id='opinions'>
+					<input type="radio" name="slider" id="slide_1" checked />
+					<input type="radio" name="slider" id="slide_2" />
+					<input type="radio" name="slider" id="slide_3" />
+					<input type="radio" name="slider" id="slide_4" />
+					
+					<div id="reviews">
+						<div>
+							<ul>
+								<li class="slide">
+									<img src="img/lucy.jpg" alt="Vanellope" />
+									<h3>Lucy Hale</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									<div class="stars">
+										<span>One star</span>
+										<span>Two stars</span>
+										<span>Three stars</span>
+										<span>Four stars</span>
+										<span>Five stars</span>
+									</div>
+								</li>
+								<li class="slide">
+									<img src="img/archie.jpg" alt="Vanellope" />
+									<h3>Archie Andrews</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									<div class="stars">
+										<span>One star</span>
+										<span>Two stars</span>
+										<span>Three stars</span>
+										<span>Four stars</span>
+										<span>Five stars</span>
+									</div>
+								</li>
+								<li class="slide">
+									<img src="img/jason.jpg" alt="Vanellope" />
+									<p>test</p>
+									<div class="stars">
+										<span>test text</span>
+									</div>
+								</li>
+								<li class="slide">
+									<img src="img/jason.jpg" alt="Vanellope" />
+									<p>test</p>
+									<div class="stars">
+										<span>test text</span>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					
+					<div id="controls">
+					  <label for="slide_1"></label>
+					  <label for="slide_2"></label>
+					  <label for="slide_3"></label>
+					  <label for="slide_4"></label>
+					</div>
+				</div>
+
+			  </div>
+			  
+			  <div id="location" class="tabcontent">
+				<h3>location</h3>
+				<p>Coming soons..</p> 
+			  </div>
+			  
+			  <div id="cusine" class="tabcontent">
+				<h3>cusine</h3>
+				<p>Coming soons..</p>
+			  </div>
+			  <div id="deals" class="tabcontent">
+				<h3>deals</h3>
+				<p>Coming soons..</p>
+			  </div>
+			  
+		</div>
+		<div class="container slider-dinner">
+			<h3>hear from the dinner!</h3>
+		</div>	
 		<div class="container">
 			<div class="img-week">
 				<a href="#">
@@ -138,22 +230,26 @@
 		</div>
 	</section>
 	<footer>
-		<div class="container">
+		<div class="container desktop-footer">
 			<div class="dining-city">
-				<div class="menu-item">
-					<span>
-						<a href="#" class="title-menu">dining city</a>
-					</span></div>
-				<div class="menu-item"><a href="#">about us</a></div>
-				<div class="menu-item"><a href="#">contact us</a></div>
-				<div class="menu-item"><a href="#">privacy policy</a></div>
-				<div class="menu-item"><a href="#">careers</a></div>
-				<div class="menu-item"><a href="#">vip program</a></div>
+				<div class="menu-item"><a href="#" class="title-menu">dining city</a>
+				<ul>
+					<li><a href="#">about us</a></li>
+					<li><a href="#">contact us</a></li>
+					<li><a href="#">privacy policy</a></li>
+					<li><a href="#">careers</a></li>
+					<li><a href="#">vip program</a></li>
+				</ul>
+				</div>
 			</div>
 			<div class="restaurant">
-				<div class="menu-item"><a href="#" class="title-menu">restaurant</a></div>
-				<div class="menu-item"><a href="#">restaurant log-in</a></div>
-				<div class="menu-item"><a href="#">add your restaurant</a></div>
+				<div class="menu-item">
+					<a href="#" class="title-menu">restaurant</a>
+				<ul>
+					<li><a href="#">restaurant log-in</a></li>
+					<li><a href="#">add your restaurant</a></li>
+				</ul>
+				</div>				
 			</div>
 			<div class="download-app">
 				<div class="menu-item">
@@ -163,8 +259,7 @@
 						<li><a href="#"><img src="images/appleApple.png" alt=""></a></li>
 					</ul>
 				</div>
-				<!-- <div class="menu-item">
-				</div> -->
+				
 			</div>
 			<div class="icons-footer">
 				<div class="menu-item">
@@ -180,8 +275,30 @@
 				</div> -->
 			</div>
 		</div>
+		<div class="container mobile-footer">
+			<div class="dining-city">
+				<div class="menu-item">
+					<a href="#"><i class="fas fa-home"></i><br><span>home</span></a>
+				</div>
+			</div>
+			<div class="restaurant">
+				<div class="menu-item">
+					<a href="#"><i class="far fa-user"></i><br><span>my dining</span></a>
+				</div>
+			</div>
+			<div class="download-app">
+				<div class="menu-item">
+					<a href="#"><i class="fas fa-download"></i><br><span>donwload app</span></a>
+				</div>
+			</div>
+			<div class="icons-footer">
+				<div class="menu-item">
+					<a href="#"><i class="fab fa-facebook-messenger"></i></a>
+				</div>
+			</div>
+		</div>
 	</footer>
 	
-
+<script src="js/style.js"></script>
 </body>
 </html>

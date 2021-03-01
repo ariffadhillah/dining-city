@@ -1,22 +1,21 @@
 /* Set the default switch box rendering context. */
-.radio {
+/* .radio {
     position: relative;
     float: left;
     display: block;
-  }
+  } */
   
-  /* Set a specific box rendering context, positioning and other details.*/
-  #this-tab-set {
+  /* #this-tab-set {
     margin: 1em;
     font-size: 16px;
     color: #555;
     font-family: helvetica;
-    position: absolute; /**/
+    position: absolute;
     
     box-shadow: 
       0px .5em 1.2em -.20em rgba(0,0,0, .4),
       0 .6em .5em -.5em rgba(0,0,0, 1);
-  }
+  } */
   
   /* Custom Default Label Styles */
   #this-tab-set > label,
@@ -36,7 +35,7 @@
   }
   #this-tab-set > input:checked + label {
     background-color: rgb(100, 100, 100);
-    margin-top: -.75em;
+    /* margin-top: -.75em; */
     
     box-shadow: 
       0em .5em 1em -.2em rgba(0,0,0, .5),
@@ -48,7 +47,7 @@
       0em .5em 1em -.2em rgba(0,0,0, .25),
       0em .5em .5em -.2em rgba(0,0,0, .3);
     z-index: 2;
-    margin-top: -.3em;
+    margin-top: -.1em;
   }
   
   #this-tab-set > input:checked + label {
@@ -56,7 +55,7 @@
   }
   #this-tab-set > .display {
     clear: both;
-    width: 329px; /* somthing to do qith context rendering is causing this prop to be required */ /* the value is the width of the container subtract the padding */
+    width: 329px; 
     padding: 1em;
     z-index: 3;
   }
@@ -72,7 +71,6 @@
     z-index: 0;
   }
   
-  /* Round Corners */
   #this-tab-set {
     border-radius: .5em;
   }
@@ -88,20 +86,15 @@
     border-bottom-left-radius: inherit;
   }
   
-  /* Hide switch inputs. */
   .radio-tabs > input {
     position: absolute;
     visibility: hidden;
   }
   
-  /* Set up state switching indicators. */
   .radio-tabs > label {
     cursor: pointer;
   }
   
-  /* Indicator call to action. */
-  
-  /* Set up Display positioning. */
   .display {
     position: relative;
     float:left;
@@ -127,8 +120,7 @@
   }
   .radio-tabs > #tab-1:checked ~ .tab-2-display,
   .radio-tabs > #tab-1:checked ~ .tab-3-display,
-  .radio-tabs > #tab-1:checked ~ .tab-4-display,
-  .radio-tabs > #tab-1:checked ~ .tab-5-display {
+  .radio-tabs > #tab-1:checked ~ .tab-4-display {
     position: absolute;
     visibility: hidden;
   }
@@ -138,8 +130,7 @@
     visibility: visible;
   }
   .radio-tabs > #tab-2:checked ~ .tab-3-display,
-  .radio-tabs > #tab-2:checked ~ .tab-4-display,
-  .radio-tabs > #tab-2:checked ~ .tab-5-display,
+  .radio-tabs > #tab-2:checked ~ .tab-4-display,  
   .radio-tabs > #tab-2:checked ~ .tab-1-display {
     position: absolute;
     visibility: hidden;
@@ -151,7 +142,6 @@
   }
   .radio-tabs > #tab-3:checked ~ .tab-2-display,
   .radio-tabs > #tab-3:checked ~ .tab-4-display,
-  .radio-tabs > #tab-3:checked ~ .tab-5-display,
   .radio-tabs > #tab-3:checked ~ .tab-1-display {
     position: absolute;
     visibility: hidden;
@@ -163,16 +153,11 @@
   }
   .radio-tabs > #tab-4:checked ~ .tab-2-display,
   .radio-tabs > #tab-4:checked ~ .tab-3-display,
-  .radio-tabs > #tab-4:checked ~ .tab-5-display,
   .radio-tabs > #tab-4:checked ~ .tab-1-display {
     position: absolute;
     visibility: hidden;
   }
   
-  .radio-tabs > #tab-5:checked ~ .tab-5-display {
-    position: relative;
-    visibility: visible;
-  }
   .radio-tabs > #tab-5:checked ~ .tab-2-display,
   .radio-tabs > #tab-5:checked ~ .tab-4-display,
   .radio-tabs > #tab-5:checked ~ .tab-1-display,
