@@ -55,7 +55,7 @@
 	<section class="nav-bottom">
 		<div class="bottom-nav-desktop">
 			<ul>
-				<li><a href="#">restaurants darectory</a></li>
+				<li><a href="#">Restaurant Directory</a></li>
 				<li><a href="#">deals</a></li>
 				<li><a href="#">restaurant week</a></li>
 				<li><a href="#">faqs</a></li>
@@ -102,65 +102,69 @@
 	</section>
 	<section class="tab-nav">	
 		<div class="container nav-tab">
-			<h3>discover restaurant</h3>
+			<h3 class="h3-discover-res">discover restaurant</h3>
 			<div class="tab">
-				<button class="tablinks" onclick="openCity(event, 'newlistings')" id="defaultOpen">new listings</button>
-				<button class="tablinks" onclick="openCity(event, 'location')">location</button>
-				<button class="tablinks" onclick="openCity(event, 'cusine')">cusine</button>
-				<button class="tablinks" onclick="openCity(event, 'deals')">deals</button>
+				<button class="tablinks btn-listing" onclick="openCity(event, 'newlistings')" id="defaultOpen">new listings</button>
+				<button class="tablinks btn-rl" onclick="openCity(event, 'location')">location</button>
+				<button class="tablinks btn-rl" onclick="openCity(event, 'cusine')">cusine</button>
+				<button class="tablinks btn-rl" onclick="openCity(event, 'deals')">deals</button>
 			  </div>
 
 			<div id="newlistings" class="tabcontent">
-				<h3>new listings</h3>
-				<p>London is the capital city of England.</p>
-
 				<div id='opinions'>
-					<input type="radio" name="slider" id="slide_1" checked />
-					<input type="radio" name="slider" id="slide_2" />
-					<input type="radio" name="slider" id="slide_3" />
-					<input type="radio" name="slider" id="slide_4" />
+					<input type="radio" name="slide" id="slide_1" checked />
+					<input type="radio" name="slide" id="slide_2" />
+					<input type="radio" name="slide" id="slide_3" />
+					<input type="radio" name="slide" id="slide_4" />
+					<input type="radio" name="slide" id="slide_5" />
+					<input type="radio" name="slide" id="slide_6" />
+					<input type="radio" name="slide" id="slide_7" />
 					
 					<div id="reviews">
 						<div>
 							<ul>
-								<li class="slide">
-									<img src="img/lucy.jpg" alt="Vanellope" />
-									<h3>Lucy Hale</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-									<div class="stars">
-										<span>One star</span>
-										<span>Two stars</span>
-										<span>Three stars</span>
-										<span>Four stars</span>
-										<span>Five stars</span>
-									</div>
+								<li class="Slider">
+									<a href="#">
+										<h5 class="title-slider">SET LUNCHEON MENU</h5>
+										<img src="images/7.jpeg" alt="" />
+									</a>
 								</li>
-								<li class="slide">
-									<img src="img/archie.jpg" alt="Vanellope" />
-									<h3>Archie Andrews</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-									<div class="stars">
-										<span>One star</span>
-										<span>Two stars</span>
-										<span>Three stars</span>
-										<span>Four stars</span>
-										<span>Five stars</span>
-									</div>
+								<li class="Slider">
+									<a href="#">
+										<h6 class="title-slider">Chef's seasonal set lunch</h6>
+										<img src="images/5.jpeg " alt="" />
+									</a>
 								</li>
-								<li class="slide">
-									<img src="img/jason.jpg" alt="Vanellope" />
-									<p>test</p>
-									<div class="stars">
-										<span>test text</span>
-									</div>
+								<li class="Slider">
+									<a href="#">
+										<h6 class="title-slider">Degustation 4 + 1 course menu</h6>
+										<img src="images/6.jpeg" alt="" />
+									</a>
 								</li>
-								<li class="slide">
-									<img src="img/jason.jpg" alt="Vanellope" />
-									<p>test</p>
-									<div class="stars">
-										<span>test text</span>
-									</div>
+								<li class="Slider">
+									<a href="#">
+										<h6 class="title-slider">Degustation 4 + 1 course menu</h6>						
+										<img src="images/4.jpeg" alt="" />
+									</a>
 								</li>
+								<li class="Slider">
+									<a href="#">
+										<h6 class="title-slider">Degustation 4 + 1 course menu</h6>
+										<img src="images/1.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="Slider">			
+									<a href="#">
+										<h6 class="title-slider">Degustation 4 + 1 course menu</h6>
+										<img src="images/3.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="Slider">						
+									<a href="#">
+										<h6 class="title-slider">Degustation 4 + 1 course menu</h6>
+										<img src="images/2.jpeg" alt="" />
+									</a>
+								</li>					
 							</ul>
 						</div>
 					</div>
@@ -170,10 +174,91 @@
 					  <label for="slide_2"></label>
 					  <label for="slide_3"></label>
 					  <label for="slide_4"></label>
+					  <label for="slide_5"></label>
+					  <label for="slide_6"></label>
+					  <label for="slide_7"></label>
+					</div>					
+			  </div>
+			  <div class="dinner">
+
+			<h3 class="h3-discover">hear from the dinner!</h3>
+			<div id='opinions_dinner'>
+				<input type="radio" name="dinnerslider" id="dinnerslide_1" checked />
+				<input type="radio" name="dinnerslider" id="dinnerslide_2" />
+				<input type="radio" name="dinnerslider" id="dinnerslide_3" />
+				<input type="radio" name="dinnerslider" id="dinnerslide_4" />
+				<input type="radio" name="dinnerslider" id="dinnerslide_5" />
+				<input type="radio" name="dinnerslider" id="dinnerslide_6" />
+				<input type="radio" name="dinnerslider" id="dinnerslide_7" />
+				
+				<div id="reviews_dinner">
+					<div>
+						<ul>
+							<li class="Slider_dinner">
+								<a href="#">
+									<h5 class="title-slider">SET LUNCHEON MENU</h5>
+									<img src="images/1.jpeg" alt="" />
+									<p class="discription-slider">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus possimus at id? Reiciendis facilis cumque sapiente sequi sint iusto</p>
+								</a>
+							</li>
+							<li class="Slider_dinner">
+								<a href="#">
+									<h6 class="title-slider">Chef's seasonal set lunch</h6>
+									<img src="images/2.jpeg " alt="" />
+									<p class="discription-slider">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus possimus at id? Reiciendis facilis cumque sapiente sequi sint iusto</p>
+								</a>
+							</li>
+							<li class="Slider_dinner">
+								<a href="#">
+									<h6 class="title-slider">Degustation 4 + 1 course menu</h6>
+									<img src="images/3.jpeg" alt="" />
+									<p class="discription-slider">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus possimus at id? Reiciendis facilis cumque sapiente sequi sint iusto</p>
+								</a>
+							</li>
+							<li class="Slider_dinner">
+								<a href="#">
+									<h6 class="title-slider">Degustation 4 + 1 course menu</h6>						
+									<img src="images/4.jpeg" alt="" />
+									<p class="discription-slider">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus possimus at id? Reiciendis facilis cumque sapiente sequi sint iusto</p>
+								</a>
+							</li>
+							<li class="Slider_dinner">
+								<a href="#">
+									<h6 class="title-slider">Degustation 4 + 1 course menu</h6>
+									<img src="images/5.jpeg" alt="" />
+									<p class="discription-slider">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus possimus at id? Reiciendis facilis cumque sapiente sequi sint iusto</p>
+								</a>
+							</li>
+							<li class="Slider_dinner">			
+								<a href="#">
+									<h6 class="title-slider">Degustation 4 + 1 course menu</h6>
+									<img src="images/6.jpeg" alt="" />
+									<p class="discription-slider">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus possimus at id? Reiciendis facilis cumque sapiente sequi sint iusto</p>
+								</a>
+							</li>
+							<li class="Slider_dinner">						
+								<a href="#">
+									<h6 class="title-slider">Degustation 4 + 1 course menu</h6>
+									<img src="images/7.jpeg" alt="" />
+									<p class="discription-slider">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus possimus at id? Reiciendis facilis cumque sapiente sequi sint iusto</p>
+								</a>
+							</li>					
+						</ul>
 					</div>
 				</div>
-
+				
+				<div id="dinnercontrols">
+				  <label for="dinnerslide_1"></label>
+				  <label for="dinnerslide_2"></label>
+				  <label for="dinnerslide_3"></label>
+				  <label for="dinnerslide_4"></label>
+				  <label for="dinnerslide_5"></label>
+				  <label for="dinnerslide_6"></label>
+				  <label for="dinnerslide_7"></label>
+				</div>					
 			  </div>
+		  </div>
+		</div>
 			  
 			  <div id="location" class="tabcontent">
 				<h3>location</h3>
@@ -188,36 +273,33 @@
 				<h3>deals</h3>
 				<p>Coming soons..</p>
 			  </div>
-			  
 		</div>
-		<div class="container slider-dinner">
-			<h3>hear from the dinner!</h3>
-		</div>	
 		<div class="container">
 			<div class="img-week">
 				<a href="#">
-					<img src="images/1200x400.png" alt="">
+					<img src="images/8.png" alt="">
 				</a>
 			</div>
 		<div class="partners-sponsors">
 			<h3>partner and sponsors</h3>
 			<div class="img-sponsors">
 				<div class="img-top">
-					<a href="#"><img src="images/square.png" alt=""></a>
-					<a href="#"><img src="images/square.png" alt=""></a>
-					<a href="#"><img src="images/square.png" alt=""></a>
-					<a href="#"><img src="images/square.png" alt=""></a>
-					<a href="#"><img src="images/square.png" alt=""></a>
+					<a href="#"><img src="images/icons/icons3.png" alt=""></a>
+					<a href="#"><img src="images/icons/icons2.png" alt=""></a>
+					<a href="#"><img src="images/icons/icons3.png" alt=""></a>
+					<a href="#"><img src="images/icons/icons2.png" alt=""></a>
+					<a href="#"><img src="images/icons/icons1.png" alt=""></a>
 				</div>
 				<div class="img-bottom">
-					<a href="#"><img src="images/square.png" alt=""></a>
-					<a href="#"><img src="images/square.png" alt=""></a>
-					<a href="#"><img src="images/square.png" alt=""></a>
-					<a href="#"><img src="images/square.png" alt=""></a>
-					<a href="#"><img src="images/square.png" alt=""></a>
-					<a href="#"><img src="images/square.png" alt=""></a>
-					<a href="#"><img src="images/square.png" alt=""></a>
-					<a href="#"><img src="images/square.png" alt=""></a>
+					<a href="#"><img src="images/icons/icons1.png" alt=""></a>
+					<a href="#"><img src="images/icons/icons2.png" alt=""></a>
+					<a href="#"><img src="images/icons/icons3.png" alt=""></a>
+					<a href="#"><img src="images/icons/icons2.png" alt=""></a>
+					<a href="#"><img src="images/icons/icons3.png" alt=""></a>
+					<a href="#"><img src="images/icons/icons1.png" alt=""></a>
+					<a href="#"><img src="images/icons/icons2.png" alt=""></a>
+					<a href="#"><img src="images/icons/icons3.png" alt=""></a>
+
 				</div>
 			</div>
 		</div>
